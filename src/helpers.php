@@ -19,7 +19,7 @@ if (!function_exists('model')) {
         return eval('return $model = new class($attributes) extends Illuminate\Database\Eloquent\Model {
             use Illuminate\Database\Eloquent\SoftDeletes;
             protected $guarded = [];
-			protected $table = \'' . $table . '\';	
+            protected $table = \'' . $table . '\';  
         };');
     }
 }
@@ -38,7 +38,7 @@ if (!function_exists('eloquent')) {
     function eloquent(string $table, array $attributes = [])
     {
         return eval('return new class($attributes) extends Illuminate\Database\Eloquent\Model {         
-			protected $table = \'' . $table . '\';	
+            protected $table = \'' . $table . '\';  
         };');
     }
 }
