@@ -1,0 +1,16 @@
+{
+    "name": "widdy/laravel-model",
+    "description": "a simple way to create a new Eloquent model with given table name.",
+    "keywords": ["laravel", "laravel-model"],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "widdy",
+            "email": "kingwide@foxmail.com"
+        }
+    ]
+}
